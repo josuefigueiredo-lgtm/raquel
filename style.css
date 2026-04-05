@@ -31,3 +31,7 @@ body { font-family: 'Nunito Sans', sans-serif; }
 .observer-hidden { opacity:0; transform:translateY(30px); }
 .observer-visible { animation: fadeUp 0.7s ease both; }
 body { box-sizing: border-box; }
+
+img{
+    border-radius: 10px;
+}
