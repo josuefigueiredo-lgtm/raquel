@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Bella - Estética</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&amp;family=Nunito+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        sand: { 50:'#fdfbf7', 100:'#f9f3ea', 200:'#f0e4d1', 300:'#e4d2b5', 400:'#d4bb94', 500:'#c4a577', 600:'#a8865a', 700:'#8a6a44', 800:'#6d5236', 900:'#553e2a' },
+      }
+    }
+  }
+}
+</script>
+ 
+
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app-wrapper" class="w-full h-full overflow-auto" style="background-color:#fdfbf7; color:#553e2a;"><!-- HEADER -->
+   <header id="site-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-500" style="background:rgba(253,251,247,0.9); backdrop-filter:blur(12px);">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between"><a href="#inicio" id="brand-link" class="font-display text-2xl font-semibold tracking-wide" style="color:#8a6a44;">Studio Bella</a>
+     <nav class="hidden md:flex items-center gap-8 text-sm font-light tracking-wider uppercase" style="color:#6d5236;"><a href="#inicio" class="nav-link">Início</a> <a href="#sobre" class="nav-link">Sobre</a> <a href="#servicos" class="nav-link">Serviços</a> <a href="#resultados" class="nav-link">Resultados</a> <a href="#contato" class="nav-link">Contato</a>
+     </nav><a id="header-whatsapp-btn" href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold cta-btn" style="background-color:#a8865a; color:#fdfbf7;"> <i data-lucide="message-circle" style="width:16px;height:16px;"></i> <span>Agendar</span> </a> <button id="mobile-menu-btn" class="md:hidden p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"> <i data-lucide="menu" style="width:24px;height:24px;color:#8a6a44;"></i> </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+     <nav class="flex flex-col gap-3 text-sm uppercase tracking-wider font-light" style="color:#6d5236;"><a href="#inicio" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Início</a> <a href="#sobre" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Sobre</a> <a href="#servicos" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Serviços</a> <a href="#resultados" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Resultados</a> <a href="#contato" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contato</a> <a id="mobile-whatsapp-btn" href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold w-fit cta-btn" style="background-color:#a8865a; color:#fdfbf7;"> <i data-lucide="message-circle" style="width:16px;height:16px;"></i> Agendar </a>
+     </nav>
+    </div>
+   </header><!-- HERO -->
+   <section id="inicio" class="relative w-full flex items-center justify-center" style="min-height:90%; background: linear-gradient(135deg, #f9f3ea 0%, #f0e4d1 40%, #e4d2b5 100%);">
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 20% 50%, #c4a577 1px, transparent 1px), radial-gradient(circle at 80% 20%, #c4a577 1px, transparent 1px); background-size: 60px 60px;"></div>
+    <div class="relative z-10 text-center px-6 max-w-3xl mx-auto pt-24 pb-16">
+     <div class="anim-fade-in anim-d1 mb-4"><span class="inline-block w-16 h-px mb-6" style="background:#a8865a;"></span>
+     </div>
+     <h1 id="hero-title" class="font-display text-5xl md:text-7xl font-light leading-tight mb-6 anim-fade-up anim-d2" style="color:#6d5236;">Realçando sua<br><em class="font-light italic">beleza natural</em></h1>
+     <p id="hero-subtitle" class="text-lg md:text-xl font-light mb-10 anim-fade-up anim-d3 leading-relaxed" style="color:#8a6a44;">Cuidados personalizados para pele e rosto, com técnicas modernas e produtos de alta qualidade. Descubra o melhor de você.</p><a id="hero-cta-btn" href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-full text-base font-semibold cta-btn anim-fade-up anim-d4" style="background-color:#a8865a; color:#fdfbf7;"> <i data-lucide="calendar" style="width:20px;height:20px;"></i> Agende seu horário </a>
+     <div class="anim-fade-in anim-d5 mt-12"><span class="inline-block w-16 h-px" style="background:#a8865a;"></span>
+     </div>
+    </div>
+   </section><!-- SOBRE -->
+   <section id="sobre" class="w-full py-20 px-6 observe-section" style="background-color:#fdfbf7;">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+     <div class="w-64 h-80 rounded-2xl flex-shrink-0 flex items-center justify-center" style="background: linear-gradient(145deg, #e4d2b5, #f0e4d1);">
+      <div class="text-center"><i data-lucide="user" style="width:64px;height:64px;color:#a8865a;margin:0 auto;display:block;"></i>
+       <p class="mt-3 text-sm font-light" style="color:#8a6a44;">Foto Profissional</p>
+      </div>
+     </div>
+     <div class="flex-1"><span class="text-xs uppercase tracking-widest font-semibold" style="color:#a8865a;">Sobre Mim</span>
+      <h2 class="font-display text-4xl md:text-5xl font-light mt-2 mb-6" style="color:#6d5236;">Dedicação à sua beleza</h2>
+      <p id="about-text" class="text-base font-light leading-relaxed mb-6" style="color:#8a6a44;">Sou esteticista formada com mais de 5 anos de experiência em cuidados com a pele e procedimentos faciais. Minha missão é ajudar cada cliente a se sentir confiante e radiante, oferecendo tratamentos personalizados com produtos de alta qualidade e técnicas atualizadas. Acredito que a beleza começa com o autocuidado.</p>
+      <div class="flex gap-8">
+       <div class="text-center"><span class="font-display text-3xl font-semibold" style="color:#a8865a;">+500</span>
+        <p class="text-xs uppercase tracking-wider mt-1" style="color:#8a6a44;">Clientes</p>
+       </div>
+       <div class="text-center"><span class="font-display text-3xl font-semibold" style="color:#a8865a;">5+</span>
+        <p class="text-xs uppercase tracking-wider mt-1" style="color:#8a6a44;">Anos</p>
+       </div>
+       <div class="text-center"><span class="font-display text-3xl font-semibold" style="color:#a8865a;">100%</span>
+        <p class="text-xs uppercase tracking-wider mt-1" style="color:#8a6a44;">Dedicação</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- SERVIÇOS -->
+   <section id="servicos" class="w-full py-20 px-6 observe-section" style="background-color:#f9f3ea;">
+    <div class="max-w-6xl mx-auto text-center"><span class="text-xs uppercase tracking-widest font-semibold" style="color:#a8865a;">Serviços</span>
+     <h2 class="font-display text-4xl md:text-5xl font-light mt-2 mb-12" style="color:#6d5236;">Tratamentos exclusivos</h2>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="service-card rounded-2xl p-8 text-left" style="background:#fdfbf7;">
+       <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:#f0e4d1;"><i data-lucide="sparkles" style="width:22px;height:22px;color:#a8865a;"></i>
+       </div>
+       <h3 class="font-display text-xl font-semibold mb-2" style="color:#6d5236;">Limpeza de Pele</h3>
+       <p class="text-sm font-light leading-relaxed mb-3" style="color:#8a6a44;">Limpeza profunda com extração e hidratação para uma pele renovada e saudável.</p><span class="text-xs uppercase tracking-wider font-semibold" style="color:#a8865a;">✦ Pele radiante e limpa</span>
+      </div>
+      <div class="service-card rounded-2xl p-8 text-left" style="background:#fdfbf7;">
+       <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:#f0e4d1;"><i data-lucide="eye" style="width:22px;height:22px;color:#a8865a;"></i>
+       </div>
+       <h3 class="font-display text-xl font-semibold mb-2" style="color:#6d5236;">Design de Sobrancelha</h3>
+       <p class="text-sm font-light leading-relaxed mb-3" style="color:#8a6a44;">Design personalizado que valoriza o formato do rosto e realça o olhar.</p><span class="text-xs uppercase tracking-wider font-semibold" style="color:#a8865a;">✦ Olhar marcante</span>
+      </div>
+      <div class="service-card rounded-2xl p-8 text-left" style="background:#fdfbf7;">
+       <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:#f0e4d1;"><i data-lucide="droplets" style="width:22px;height:22px;color:#a8865a;"></i>
+       </div>
+       <h3 class="font-display text-xl font-semibold mb-2" style="color:#6d5236;">Peeling Facial</h3>
+       <p class="text-sm font-light leading-relaxed mb-3" style="color:#8a6a44;">Renovação celular com ácidos selecionados para uniformizar e rejuvenescer.</p><span class="text-xs uppercase tracking-wider font-semibold" style="color:#a8865a;">✦ Pele rejuvenescida</span>
+      </div>
+      <div class="service-card rounded-2xl p-8 text-left" style="background:#fdfbf7;">
+       <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:#f0e4d1;"><i data-lucide="sun" style="width:22px;height:22px;color:#a8865a;"></i>
+       </div>
+       <h3 class="font-display text-xl font-semibold mb-2" style="color:#6d5236;">Hidratação Profunda</h3>
+       <p class="text-sm font-light leading-relaxed mb-3" style="color:#8a6a44;">Tratamento nutritivo para devolver a vitalidade e maciez à pele.</p><span class="text-xs uppercase tracking-wider font-semibold" style="color:#a8865a;">✦ Nutrição intensa</span>
+      </div>
+      <div class="service-card rounded-2xl p-8 text-left" style="background:#fdfbf7;">
+       <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:#f0e4d1;"><i data-lucide="zap" style="width:22px;height:22px;color:#a8865a;"></i>
+       </div>
+       <h3 class="font-display text-xl font-semibold mb-2" style="color:#6d5236;">Microagulhamento</h3>
+       <p class="text-sm font-light leading-relaxed mb-3" style="color:#8a6a44;">Estimula colágeno natural para reduzir manchas, cicatrizes e linhas finas.</p><span class="text-xs uppercase tracking-wider font-semibold" style="color:#a8865a;">✦ Colágeno renovado</span>
+      </div>
+      <div class="service-card rounded-2xl p-8 text-left" style="background:#fdfbf7;">
+       <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:#f0e4d1;"><i data-lucide="heart" style="width:22px;height:22px;color:#a8865a;"></i>
+       </div>
+       <h3 class="font-display text-xl font-semibold mb-2" style="color:#6d5236;">Protocolo Anti-idade</h3>
+       <p class="text-sm font-light leading-relaxed mb-3" style="color:#8a6a44;">Combinação de técnicas avançadas para prevenir e tratar sinais do envelhecimento.</p><span class="text-xs uppercase tracking-wider font-semibold" style="color:#a8865a;">✦ Juventude prolongada</span>
+      </div>
+     </div>
+    </div>
+   </section><!-- RESULTADOS -->
+   <section id="resultados" class="w-full py-20 px-6 observe-section" style="background-color:#fdfbf7;">
+    <div class="max-w-6xl mx-auto text-center"><span class="text-xs uppercase tracking-widest font-semibold" style="color:#a8865a;">Resultados</span>
+     <h2 class="font-display text-4xl md:text-5xl font-light mt-2 mb-12" style="color:#6d5236;">Transformações reais</h2>
+     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="gallery-item aspect-square">
+       <div class="gallery-placeholder w-full h-full flex flex-col items-center justify-center rounded-xl" style="background: linear-gradient(145deg, #e4d2b5, #f0e4d1);"><i data-lucide="camera" style="width:32px;height:32px;color:#a8865a;"></i> <span class="text-xs mt-2 font-light" style="color:#8a6a44;">Antes &amp; Depois</span>
+       </div>
+      </div>
+      <div class="gallery-item aspect-square">
+       <div class="gallery-placeholder w-full h-full flex flex-col items-center justify-center rounded-xl" style="background: linear-gradient(145deg, #f0e4d1, #f9f3ea);"><i data-lucide="camera" style="width:32px;height:32px;color:#a8865a;"></i> <span class="text-xs mt-2 font-light" style="color:#8a6a44;">Limpeza de Pele</span>
+       </div>
+      </div>
+      <div class="gallery-item aspect-square">
+       <div class="gallery-placeholder w-full h-full flex flex-col items-center justify-center rounded-xl" style="background: linear-gradient(145deg, #e4d2b5, #d4bb94);"><i data-lucide="camera" style="width:32px;height:32px;color:#a8865a;"></i> <span class="text-xs mt-2 font-light" style="color:#fdfbf7;">Peeling</span>
+       </div>
+      </div>
+      <div class="gallery-item aspect-square">
+       <div class="gallery-placeholder w-full h-full flex flex-col items-center justify-center rounded-xl" style="background: linear-gradient(145deg, #f0e4d1, #e4d2b5);"><i data-lucide="camera" style="width:32px;height:32px;color:#a8865a;"></i> <span class="text-xs mt-2 font-light" style="color:#8a6a44;">Sobrancelha</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- DEPOIMENTOS -->
+   <section class="w-full py-20 px-6 observe-section" style="background-color:#f9f3ea;">
+    <div class="max-w-5xl mx-auto text-center"><span class="text-xs uppercase tracking-widest font-semibold" style="color:#a8865a;">Depoimentos</span>
+     <h2 class="font-display text-4xl md:text-5xl font-light mt-2 mb-12" style="color:#6d5236;">O que dizem nossas clientes</h2>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="rounded-2xl p-8 text-left" style="background:#fdfbf7;">
+       <div class="flex gap-1 mb-4"><i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i> <i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i> <i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i> <i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i> <i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i>
+       </div>
+       <p class="text-sm font-light leading-relaxed mb-4" style="color:#8a6a44;">"Minha pele nunca esteve tão bonita! O atendimento é incrível e os resultados são visíveis desde a primeira sessão."</p><span class="font-display text-base font-semibold" style="color:#6d5236;">— Ana Carolina</span>
+      </div>
+      <div class="rounded-2xl p-8 text-left" style="background:#fdfbf7;">
+       <div class="flex gap-1 mb-4"><i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i> <i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i> <i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i> <i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i> <i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i>
+       </div>
+       <p class="text-sm font-light leading-relaxed mb-4" style="color:#8a6a44;">"Profissional maravilhosa! Super cuidadosa e atenciosa. Meu design de sobrancelha ficou perfeito."</p><span class="font-display text-base font-semibold" style="color:#6d5236;">— Juliana Mendes</span>
+      </div>
+      <div class="rounded-2xl p-8 text-left" style="background:#fdfbf7;">
+       <div class="flex gap-1 mb-4"><i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i> <i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i> <i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i> <i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i> <i data-lucide="star" style="width:16px;height:16px;color:#c4a577;fill:#c4a577;"></i>
+       </div>
+       <p class="text-sm font-light leading-relaxed mb-4" style="color:#8a6a44;">"Ambiente super aconchegante e limpo. Me sinto em casa toda vez que vou. Recomendo demais!"</p><span class="font-display text-base font-semibold" style="color:#6d5236;">— Beatriz Silva</span>
+      </div>
+     </div>
+    </div>
+   </section><!-- CTA -->
+   <section id="contato" class="w-full py-24 px-6 text-center observe-section" style="background: linear-gradient(135deg, #e4d2b5 0%, #d4bb94 100%);">
+    <div class="max-w-2xl mx-auto"><i data-lucide="heart" style="width:40px;height:40px;color:#fdfbf7;margin:0 auto 16px;display:block;"></i>
+     <h2 class="font-display text-4xl md:text-5xl font-light mb-4" style="color:#fdfbf7;">Pronta para se cuidar?</h2>
+     <p class="text-lg font-light mb-10" style="color:rgba(253,251,247,0.85);">Agende agora pelo WhatsApp e ganhe uma avaliação personalizada gratuita.</p><a id="cta-whatsapp-btn" href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-10 py-5 rounded-full text-lg font-semibold cta-btn" style="background-color:#fdfbf7; color:#8a6a44;">
+      <svg style="width:24px;height:24px;" viewbox="0 0 24 24" fill="#8a6a44">
+       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg> Agendar pelo WhatsApp </a>
+    </div>
+   </section><!-- FOOTER -->
+   <footer class="w-full py-10 px-6" style="background-color:#553e2a; color:rgba(253,251,247,0.7);">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
+     <div><span id="footer-brand" class="font-display text-xl font-semibold" style="color:#f0e4d1;">Studio Bella</span>
+      <p id="footer-address" class="mt-1 font-light">Rua das Flores, 123 — São Paulo, SP</p>
+     </div>
+     <div class="flex items-center gap-5"><a id="footer-instagram-link" href="https://instagram.com/studiobella" target="_blank" rel="noopener noreferrer" class="hover:opacity-100 opacity-70 transition-opacity">
+       <svg style="width:24px;height:24px;" viewbox="0 0 24 24" fill="none" stroke="#f0e4d1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+       </svg></a> <a id="footer-whatsapp-link" href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="hover:opacity-100 opacity-70 transition-opacity">
+       <svg style="width:24px;height:24px;" viewbox="0 0 24 24" fill="none" stroke="#f0e4d1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+       </svg></a>
+     </div>
+     <p class="font-light text-xs">© 2025 Studio Bella. Todos os direitos reservados.</p>
+    </div>
+   </footer>
+  </div>
+  <script>
+const defaultConfig = {
+  brand_name: 'Studio Bella',
+  hero_title: 'Realçando sua beleza natural',
+  hero_subtitle: 'Cuidados personalizados para pele e rosto, com técnicas modernas e produtos de alta qualidade. Descubra o melhor de você.',
+  about_text: 'Sou esteticista formada com mais de 5 anos de experiência em cuidados com a pele e procedimentos faciais. Minha missão é ajudar cada cliente a se sentir confiante e radiante, oferecendo tratamentos personalizados com produtos de alta qualidade e técnicas atualizadas. Acredito que a beleza começa com o autocuidado.',
+  whatsapp_number: '5511999999999',
+  instagram_handle: '@studiobella',
+  address_text: 'Rua das Flores, 123 — São Paulo, SP',
+  background_color: '#fdfbf7',
+  surface_color: '#f9f3ea',
+  text_color: '#553e2a',
+  primary_action_color: '#a8865a',
+  secondary_action_color: '#8a6a44',
+  font_family: 'Cormorant Garamond',
+  font_size: 16
+};
+
+function updateWhatsAppLinks(num) {
+  const url = `https://wa.me/${num}`;
+  ['header-whatsapp-btn','mobile-whatsapp-btn','hero-cta-btn','cta-whatsapp-btn','footer-whatsapp-link'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.href = url;
+  });
+}
+
+function applyConfig(config) {
+  const c = { ...defaultConfig, ...config };
+
+  // Brand
+  document.getElementById('brand-link').textContent = c.brand_name;
+  document.getElementById('footer-brand').textContent = c.brand_name;
+
+  // Hero
+  const heroEl = document.getElementById('hero-title');
+  heroEl.innerHTML = c.hero_title.replace(/\n/g,'<br>');
+  document.getElementById('hero-subtitle').textContent = c.hero_subtitle;
+
+  // About
+  document.getElementById('about-text').textContent = c.about_text;
+
+  // Footer
+  document.getElementById('footer-address').textContent = c.address_text;
+
+  // Links
+  updateWhatsAppLinks(c.whatsapp_number);
+  const igHandle = c.instagram_handle.replace('@','');
+  document.getElementById('footer-instagram-link').href = `https://instagram.com/${igHandle}`;
+
+  // Colors
+  const wrapper = document.getElementById('app-wrapper');
+  wrapper.style.backgroundColor = c.background_color;
+  wrapper.style.color = c.text_color;
+
+  document.querySelectorAll('.service-card, [data-surface]').forEach(el => {
+    el.style.backgroundColor = c.background_color;
+  });
+
+  // Primary action buttons
+  ['header-whatsapp-btn','mobile-whatsapp-btn','hero-cta-btn'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) { el.style.backgroundColor = c.primary_action_color; el.style.color = c.background_color; }
+  });
+
+  // Fonts
+  const displayFont = `${c.font_family}, Cormorant Garamond, serif`;
+  document.querySelectorAll('.font-display').forEach(el => { el.style.fontFamily = displayFont; });
+
+  // Font size
+  const base = c.font_size;
+  document.querySelectorAll('p, span').forEach(el => {
+    const current = parseFloat(getComputedStyle(el).fontSize);
+    if (current <= 14) el.style.fontSize = `${base * 0.8}px`;
+    else if (current <= 18) el.style.fontSize = `${base}px`;
+    else el.style.fontSize = `${base * 1.2}px`;
+  });
+}
+
+// Intersection Observer for scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.observer-hidden').forEach((el, i) => {
+        el.style.animationDelay = `${i * 0.1}s`;
+        el.classList.add('observer-visible');
+        el.classList.remove('observer-hidden');
+      });
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.observe-section').forEach(s => observer.observe(s));
+
+// Init SDK
+window.elementSdk.init({
+  defaultConfig,
+  onConfigChange: async (config) => { applyConfig(config); },
+  mapToCapabilities: (config) => ({
+    recolorables: [
+      { get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); }},
+      { get: () => config.surface_color || defaultConfig.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); }},
+      { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); }},
+      { get: () => config.primary_action_color || defaultConfig.primary_action_color, set: (v) => { config.primary_action_color = v; window.elementSdk.setConfig({ primary_action_color: v }); }},
+      { get: () => config.secondary_action_color || defaultConfig.secondary_action_color, set: (v) => { config.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); }},
+    ],
+    borderables: [],
+    fontEditable: {
+      get: () => config.font_family || defaultConfig.font_family,
+      set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); }
+    },
+    fontSizeable: {
+      get: () => config.font_size || defaultConfig.font_size,
+      set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); }
+    }
+  }),
+  mapToEditPanelValues: (config) => new Map([
+    ['brand_name', config.brand_name || defaultConfig.brand_name],
+    ['hero_title', config.hero_title || defaultConfig.hero_title],
+    ['hero_subtitle', config.hero_subtitle || defaultConfig.hero_subtitle],
+    ['about_text', config.about_text || defaultConfig.about_text],
+    ['whatsapp_number', config.whatsapp_number || defaultConfig.whatsapp_number],
+    ['instagram_handle', config.instagram_handle || defaultConfig.instagram_handle],
+    ['address_text', config.address_text || defaultConfig.address_text],
+  ])
+});
+
+lucide.createIcons();
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e7be6f9f420df4a',t:'MTc3NTQyNzIyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
